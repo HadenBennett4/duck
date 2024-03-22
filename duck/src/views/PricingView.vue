@@ -80,7 +80,7 @@
       font-size: 50px;
     }
     h2-2 {
-      font-size: 30px;
+      font-size: 25px;
       width: 80%;
       text-align: start;
     }
