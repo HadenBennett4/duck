@@ -4,12 +4,11 @@
       <div class="back-button"><</div>
       <div class="next-button">></div>
       <div class="container">
+        <div class="project-wrapper">
+        <div class="project-box">21</div>
+        <div class="project-box">h</div>
         <div class="project-box"></div>
-        <div class="project-box"></div>
-        <div class="project-box"></div>
-        <div class="project-box"></div>
-        <div class="project-box"></div>
-        <div class="project-box"></div>
+      </div>
       </div>
     </div>
   </template>
@@ -20,7 +19,9 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
+      justify-content: center;
       position: relative;
+      z-index:2;
     }
     h{
       font-size: 50px;
@@ -36,14 +37,22 @@
       position: absolute;
     }
     .container{
-      width: 100%;
-      height: 60%;
+      display: grid;
       background-color: aqua;
-      grid-template-columns: repeat(6, 1fr);
-      position: absolute;
+      width: 55em;
+      height: 60%;
+      grid-template-columns: 1fr 1fr 1fr;
+      position: absolute; 
+      gap:1em;
+      align-items: center;
+      justify-content: center;
+      overflow-x: scroll;
     }
     .project-box{
-      background-color: aquamarine;
+      background-color: red;
+      height: 70%;
+      width: 100%;
+
     }
   }
   </style>
