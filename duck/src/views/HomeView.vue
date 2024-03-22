@@ -5,12 +5,14 @@ import { RouterLink } from 'vue-router'
 <template>
 
   <main>
-    <header>
       <nav>
-        <router-link :to="{hash: '#home'}">Home</router-link>
-        <router-link :to="{hash: '#about'}">About</router-link>
+        <router-link class="link" :to="{hash: '#home'}">Home</router-link>
+        <router-link class="link" :to="{hash: '#portfolio'}">Portfolio</router-link>
+        <router-link class="link" :to="{hash: '#testimonials'}">Testimonials</router-link>
+        <router-link class="link" :to="{hash: '#pricing'}">Pricing</router-link>
+        <router-link class="link" :to="{hash: '#about'}">About</router-link>
+        <router-link class="link" :to="{hash: '#contact'}">Contact</router-link>
       </nav>
-  </header>
 
 
   <div class="building1"></div>
@@ -22,7 +24,9 @@ import { RouterLink } from 'vue-router'
   <div class="building7"></div>
   <div class="building8"></div>
 
-    This is the home page
+  <div class="header-text" >Duckweed<br> Marketing</div>
+  <div class="bill-board">Get your big titty ogth bitch here</div>
+  <div class="sun"></div>
   </main>
 </template>
 
@@ -99,5 +103,40 @@ main{
   left:85%;
   z-index: 1;
 }
+.bill-board{
+  position: absolute;
+  background-color: brown;
+  border:2px solid white;
+  width: 42%;
+  height: 40%;
+  left: 55%;
+  top: 5%;
+}
+.header-text{
+  font-size: 70px;
+  position:absolute;
+  left: 8%;
+  top:10%;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 1em;
+  margin-right: 1em;
+} 
+.link{
+  font-size: 15px;
+}
+.sun{
+  position: absolute;
+  background-color: yellowgreen;
+  width: 10%;
+  height: 10%;
+  left: 0;
+  top: 0;
+}
+
 
 </style>
