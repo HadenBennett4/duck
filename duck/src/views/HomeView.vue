@@ -33,7 +33,6 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 main{
   width: 100%;
-  background-color: aqua;
   min-height: 100vh;
   position: relative;
 }
