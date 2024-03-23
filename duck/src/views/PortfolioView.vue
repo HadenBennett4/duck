@@ -2,18 +2,23 @@
     <div class="portfolio">
       <h>Portfolio</h>
       <div class="back-button"><</div>
-      <div class="next-button">></div>
+      <v-icon scale="2" aria-hidden="false" fill="red" name="bi-arrow-left-cirlce-fill" class="next-button"></v-icon>
       <div class="container">
         <div class="project-wrapper">
-        <div class="project-box">21</div>
-        <div class="project-box">h</div>
-        <div class="project-box"></div>
+          <div class="project-box"></div>
+          <div class="project-box"></div>
+          <div class="project-box"></div>
+      </div>
+      <div class="project-wrapper">
+          <div class="project-box"></div>
+          <div class="project-box"></div>
+          <div class="project-box"></div>
       </div>
       </div>
     </div>
   </template>
   
-  <style>
+  <style scoped>
   @media (min-width: 1024px) {
     .portfolio {
       min-height: 100vh;
@@ -37,22 +42,28 @@
       position: absolute;
     }
     .container{
-      display: grid;
-      background-color: aqua;
-      width: 55em;
-      height: 60%;
-      grid-template-columns: 1fr 1fr 1fr;
-      position: absolute; 
-      gap:1em;
+      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
-      overflow-x: scroll;
+      width: 200%;
+      height: 60%;
+      position: absolute; 
+      left: 0;
+      overflow-x: hidden;
+    }
+    .project-wrapper{
+      width: 50%;
+      height: 70%; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
     }
     .project-box{
-      background-color: red;
-      height: 70%;
-      width: 100%;
-
+      background-color: bisque;
+      width: 28%;
+      height: 100%;
     }
   }
   </style>
